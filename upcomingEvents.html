@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uncoming Events</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
 </head>
 <body>
     <header>
-      
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
             <a class="navbar-brand" href="#"> <img class="col-8" src="./assets/img/amazing_brand.png" alt="logo"> </a>
@@ -26,120 +25,85 @@
                   <a class="nav-link" href="#">Upcoming Events</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="">Past Events</a>
+                  <a class="nav-link" href="./pastEvents.html">Past Events</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="./contact.html">Contact</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Stats</a>
+                  <a class="nav-link" href="./stats.html">Stats</a>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
     </header>
-    <nav>
-        <div id="carousel" class="carousel slide">
-            
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./assets/img/cinema.jpg" class="d-block w-100" alt="cinema">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/books.jpg" class="d-block w-100" alt="books">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/costume_party.jpg" class="d-block w-100" alt="party">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/food_fair.jpg" class="d-block w-100" alt="food">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/marathon.jpg" class="d-block w-100" alt="marathon">
-              </div>
-              <h1 class="titulo"> <span> UPCOMING EVENTS </span></h1>
-            </div>         
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouse" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+    <main>
+        <nav>
+            <div id="carousel" class="carousel slide">
+                
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/img/cinema.jpg" class="d-block w-100" alt="cinema">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/books.jpg" class="d-block w-100" alt="books">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/costume_party.jpg" class="d-block w-100" alt="party">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/food_fair.jpg" class="d-block w-100" alt="food">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/marathon.jpg" class="d-block w-100" alt="marathon">
+                </div>
+                <h1 class="titulo"> <span> UPCOMING EVENTS </span></h1>
+                </div>         
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouse" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
 
-          <div class="filtros">
-            <div class="categorias">
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Category</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                <label class="form-check-label" for="inlineCheckbox2">Category</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option3">
-                <label class="form-check-label" for="inlineCheckbox1">Category</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option4">
-                <label class="form-check-label" for="inlineCheckbox2">Category</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option5">
-                <label class="form-check-label" for="inlineCheckbox2">Category</label>
-              </div>
+            <div class="filtros">
+                <div class="categorias">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Category</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Category</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox1">Category</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option4">
+                    <label class="form-check-label" for="inlineCheckbox2">Category</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option5">
+                    <label class="form-check-label" for="inlineCheckbox2">Category</label>
+                </div>
+                </div>
+                <div class="buscador">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                </div>
             </div>
-            <div class="buscador">
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-            </div>
-          </div>
 
-          <div class="tarjetas">
-            <div class="card" style="width: 18rem;">
-              <img src="./assets/img/books.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p>Price</p>
-                <a href="#" class="btn btn-primary">Details</a>
-              </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-              <img src="./assets/img/cinema.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p>Price</p>
-                <a href="#" class="btn btn-primary">Details</a>
-              </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-              <img src="./assets/img/costume_party.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p>Price</p>
-                <a href="#" class="btn btn-primary">Details</a>
-              </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-              <img src="./assets/img/music_concert.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p>Price</p>
-                <a href="#" class="btn btn-primary">Details</a>
-              </div>
-            </div>
-          </div>  
-        
+            <div class="tarjetas" id="contCardUpcom">
+            </div>  
+        </main>
           <footer>
             <div class="social">
             <img src="./assets/img/instagram.png" alt="Instagram">
@@ -160,7 +124,7 @@
 
 
 
-
+    <script src="./assets/js/upcomingEvents.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
