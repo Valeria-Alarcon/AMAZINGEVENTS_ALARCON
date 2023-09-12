@@ -54,10 +54,7 @@ main{
     padding: 20px;
     gap: 12px;
 }
-.imgTarj{
-    height: 100px !important;
-    width: 100px !important;
-}
+
 footer{
     display: flex;
     justify-content: space-between;

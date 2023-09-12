@@ -1,16 +1,28 @@
-crearCategorias (categorias, `contenedorCategoria`)
+const urlData = "https://mindhub-xj03.onrender.com/api/amazing";
+let buscador = "";
+let checkboxes = "";
 
-card(filtrarFecha('futuro'), 'contCard');
+async function ejecutar() {
+  data = await getBaseDeDatos(urlData);
 
-let buscador = document.getElementById ('buscar');
-let checkboxes = document.querySelectorAll (".check")
+  crearCategorias(filtrarCategorias(data.events), `contenedorCategoria`);
+  card(filtrarFecha("futuro", data.currentDate, data.events), "contCard");
 
-checkboxes.forEach (ch => {
+  buscador = document.getElementById("buscar");
+  checkboxes = document.querySelectorAll(".check");
+
+  checkboxes.forEach((ch) => {
     ch.addEventListener("change", () => {
-        filtrar(filtrarFecha('futuro'), 'contCard')
-    })
-})
+      filtrar(
+        filtrarFecha("futuro", data.currentDate, data.events),
+        "contCard"
+      );
+    });
+  });
 
-buscador.addEventListener('input', () => {
-    filtrar(filtrarFecha('futuro'), 'contCard')
-})
+  buscador.addEventListener("input", () => {
+    filtrar(filtrarFecha("futuro", data.currentDate, data.events), "contCard");
+  });
+}
+
+ejecutar();

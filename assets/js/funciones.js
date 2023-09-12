@@ -15,12 +15,18 @@ function card (array, idContenedor){
         document.getElementById(idContenedor).innerHTML = html;
     };
 };
-let categorias = []
-data.events.forEach (evento => {
-    if (!categorias.includes (evento.category)){
-        categorias.push (evento.category)
-    }
+
+function filtrarCategorias(eventos){
+    let categorias = []
+
+    eventos.forEach (evento => {
+        if (!categorias.includes (evento.category)){
+            categorias.push (evento.category)
+        }
 })
+return categorias
+}
+
 
 function crearCategorias (array, idContenedor){
     let html = ""
@@ -36,20 +42,20 @@ function crearCategorias (array, idContenedor){
     };
 };
 
-function filtrarFecha (tiempo){
-    let fechaActual = data.currentDate
+function filtrarFecha (tiempo,currentDate,eventos){
+    let fechaActual = currentDate
     if (tiempo == 'pasado') {
-        return data.events.filter (e => e.date < fechaActual)
+        return eventos.filter (e => e.date < fechaActual)
     }
     else if ( tiempo == 'futuro'){
-        return data.events.filter (e => e.date > fechaActual)
+        return eventos.filter (e => e.date > fechaActual)
     }
 }
 
 function sinCoincidencias (value){
     let mensajeAmigable = ""
     if (value = true) {
-        mensajeAmigable = "<h2>No se encontraron coincidencias</h2>"}
+        mensajeAmigable = "<h2>No matches found</h2>"}
     document.getElementById ('contCard').innerHTML = mensajeAmigable
 }
 
@@ -98,3 +104,4 @@ function crearDetail (evento, idContenedor){
         </div>
     </div>`
 }
+
