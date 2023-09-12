@@ -17,6 +17,10 @@ main{
     background-color: rgb(31, 97, 238) !important;
 }
 
+.navbar-collapse{
+    flex-grow: 0;
+}
+
 .d-block{
     height: 300px;
     object-fit: cover;
